@@ -4,13 +4,13 @@ resources:
     quotes_dba_bundle_job:
       name: quotes_dba_bundle_job
 
-      schedule:
-        quartz_cron_expression: "44 37 8 * * ?"
-        timezone_id: Europe/Amsterdam
+      # schedule:
+      #   quartz_cron_expression: "44 37 8 * * ?"
+      #   timezone_id: Europe/Amsterdam
 
-      email_notifications:
-        on_failure:
-          - d.martins@kigroup.de
+      # email_notifications:
+      #   on_failure:
+      #     - d.martins@kigroup.de
 
       tasks:
         # - task_key: notebook_task
@@ -25,7 +25,7 @@ resources:
 
         - task_key: refresh_pipeline
           depends_on:
-            - task_key: notebook_task
+            - task_key: python_file_task
           pipeline_task:
             pipeline_id: ${resources.pipelines.quotes_dba_bundle_pipeline.id}
 

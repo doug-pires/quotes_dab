@@ -1,3 +1,9 @@
+import sys
+
+# sys.path.append("quotes_dba")
+path = "/Workspace/Users/d.martins@kigroup.de/.bundle/quotes_dba_bundle/dev/files"
+sys.path.append(path)
+
 from quotes_dba.config_logging import get_stream_logger
 
 logger = get_stream_logger(__name__)
@@ -19,6 +25,7 @@ def dummy_func() -> str:
             main()
     """
     logger.info("Running the function for demonstration purposes...")
+    # print("Running the function for demonstration purposes...")
     return "Dummy"
 
 
@@ -30,7 +37,7 @@ def main():  # pragma: no cover
         if __name__ == "__main__":
             main()
     """
-    dummy_func()
+    print(dummy_func())
 
 
 if __name__ == "__main__":
