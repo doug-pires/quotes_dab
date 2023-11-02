@@ -1,0 +1,52 @@
+# The main job for quotes_dba_bundle
+resources:
+  jobs:
+    quotes_dba_bundle_job:
+      name: quotes_dba_bundle_job
+
+      schedule:
+        quartz_cron_expression: "44 37 8 * * ?"
+        timezone_id: Europe/Amsterdam
+
+      email_notifications:
+        on_failure:
+          - d.martins@kigroup.de
+
+      tasks:
+        # - task_key: notebook_task
+        #   job_cluster_key: job_cluster
+        #   notebook_task:
+        #     notebook_path: ../quotes_dba/dummy.py
+
+        - task_key: python_file_task
+          job_cluster_key: job_cluster
+          spark_python_task:
+            python_file: ../quotes_dba/dummy.py
+
+        - task_key: refresh_pipeline
+          depends_on:
+            - task_key: notebook_task
+          pipeline_task:
+            pipeline_id: ${resources.pipelines.quotes_dba_bundle_pipeline.id}
+
+        - task_key: main_task
+          depends_on:
+            - task_key: refresh_pipeline
+          job_cluster_key: job_cluster
+          python_wheel_task:
+            package_name: quotes_dba
+            entry_point: main
+          libraries:
+            # By default we just include the .whl file generated for the quotes_dba_bundle package.
+            # See https://docs.databricks.com/dev-tools/bundles/library-dependencies.html
+            # for more information on how to add other libraries.
+            - whl: ../dist/*.whl
+
+      job_clusters:
+        - job_cluster_key: job_cluster
+          new_cluster:
+            spark_version: 13.3.x-scala2.12
+            node_type_id: Standard_D3_v2
+            autoscale:
+              min_workers: 1
+              max_workers: 2

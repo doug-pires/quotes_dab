@@ -58,3 +58,4 @@ line-length = 88
 
 [tool.poetry.scripts]
 request-quote = "quotes.request_quote:main"
+main = "quotes.dummy:main"

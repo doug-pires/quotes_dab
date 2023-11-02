@@ -1,6 +1,6 @@
 from pytest import fixture
 
-from quotes.request_quote import extract_quote
+from quotes_dba.request_quote import extract_quote
 
 
 def test_integration_with_api_ninjas(api_key_integration: fixture):

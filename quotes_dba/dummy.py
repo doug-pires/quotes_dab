@@ -1,4 +1,4 @@
-from quotes.config_logging import get_stream_logger
+from quotes_dba.config_logging import get_stream_logger
 
 logger = get_stream_logger(__name__)
 
