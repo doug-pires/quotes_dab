@@ -5,8 +5,8 @@ from datetime import datetime
 import requests
 from databricks.sdk import WorkspaceClient
 
-from quotes.config_logging import get_stream_logger
-from quotes.provide_config import (
+from quotes_dba.config_logging import get_stream_logger
+from quotes_dba.provide_config import (
     category_list,
     path_landing_quotes_dbx,
     profile_to_authenticate,

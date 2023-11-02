@@ -1,6 +1,10 @@
 from pytest import fixture
 
-from quotes.request_quote import extract_quote, pick_random_category, save_to_storage
+from quotes_dba.request_quote import (
+    extract_quote,
+    pick_random_category,
+    save_to_storage,
+)
 
 
 def test_return_one_string_randomly_between_list_of_categories():
