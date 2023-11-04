@@ -1,6 +1,6 @@
 from pytest import fixture
 
-from quotes_dba.request_quote import (
+from quotes_dab.request_quote import (
     extract_quote,
     pick_random_category,
     save_to_storage,

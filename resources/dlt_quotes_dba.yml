@@ -4,14 +4,14 @@ resources:
     dlt_quotes:
       name: DLT_Quote_DBA
       catalog: catalog_quotes
-      target: quotes_dba
+      target: quotes_dab
       development: false
       continuous: false
       photon: false
       # target: quotes_dba_bundle_${bundle.environment}
       libraries:
         - notebook:
-            path: ../quotes_dba/pipeline/dlt_quote.py
+            path: ../quotes_dab/pipeline/dlt_quote.py
       clusters:
         - num_workers: 1
           custom_tags:

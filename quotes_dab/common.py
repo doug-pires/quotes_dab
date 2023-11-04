@@ -1,7 +1,7 @@
 import pyspark.sql.functions as F
 from pyspark.sql import DataFrame
 
-from quotes_dba.config_logging import get_stream_logger
+from quotes_dab.config_logging import get_stream_logger
 
 logger = get_stream_logger(__name__)
 

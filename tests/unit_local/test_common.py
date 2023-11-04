@@ -5,7 +5,7 @@ from chispa import assert_df_equality
 from pyspark.sql.types import LongType, StringType, StructField, StructType
 from pytest import fixture
 
-from quotes_dba.common import (
+from quotes_dab.common import (
     add_hash_col,
     add_metadata_cols,
     cast_cols,

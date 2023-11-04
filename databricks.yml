@@ -1,7 +1,7 @@
 # This is a Databricks asset bundle definition for quotes_dba_bundle.
 # See https://docs.databricks.com/dev-tools/bundles/index.html for documentation.
 bundle:
-  name: quotes_dba_bundle
+  name: quotes_dab_bundle
 
 include:
   - resources/*.yml

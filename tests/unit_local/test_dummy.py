@@ -1,4 +1,4 @@
-from quotes_dba.dummy import dummy_func
+from quotes_dab.dummy import dummy_func
 
 
 def test_dummy_func():

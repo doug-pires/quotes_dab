@@ -1,10 +1,10 @@
 import sys
 
 # sys.path.append("quotes_dba")
-path = "/Workspace/Users/d.martins@kigroup.de/.bundle/quotes_dba_bundle/dev/files"
+path = "/Workspace/Users/d.martins@kigroup.de/.bundle/quotes_dab_bundle/dev/files"
 sys.path.append(path)
 
-from quotes_dba.config_logging import get_stream_logger
+from quotes_dab.config_logging import get_stream_logger
 
 logger = get_stream_logger(__name__)
 

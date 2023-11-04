@@ -1,8 +1,8 @@
-# The main job for quotes_dba_bundle
+# The main job for quotes_dab_bundle
 resources:
   jobs:
-    quotes_dba_bundle_job:
-      name: quotes_dba_bundle_job
+    quotes_dab_bundle_job:
+      name: quotes_dab_bundle_job
 
       # schedule:
       #   quartz_cron_expression: "44 37 8 * * ?"
@@ -16,17 +16,17 @@ resources:
         - task_key: setup_catalogs
           job_cluster_key: job_cluster
           spark_python_task:
-            python_file: ../quotes_dba/create_catalog_quotes.py
+            python_file: ../quotes_dab/create_catalog_quotes.py
 
         - task_key: extract_quotes
           depends_on:
             - task_key: setup_catalogs
           job_cluster_key: job_cluster
           python_wheel_task:
-            package_name: quotes_dba
+            package_name: quotes_dab
             entry_point: "request-quote"
           libraries:
-            # By default we just include the .whl file generated for the quotes_dba_bundle package.
+            # By default we just include the .whl file generated for the quotes_dab_bundle package.
             # See https://docs.databricks.com/dev-tools/bundles/library-dependencies.html
             # for more information on how to add other libraries.
             - whl: ../dist/*.whl
@@ -42,7 +42,7 @@ resources:
             - task_key: refresh_pipeline
           job_cluster_key: job_cluster
           spark_python_task:
-            python_file: ../quotes_dba/dummy.py
+            python_file: ../quotes_dab/dummy.py
 
       job_clusters:
         - job_cluster_key: job_cluster
