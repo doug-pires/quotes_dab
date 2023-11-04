@@ -2,7 +2,7 @@
 resources:
   pipelines:
     dlt_quotes:
-      name: DLT_Quote_DBA
+      name: DLT_Quote_DAB
       catalog: catalog_quotes
       target: quotes_dab
       development: false

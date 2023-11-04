@@ -57,5 +57,5 @@ omit = [
 line-length = 88
 
 [tool.poetry.scripts]
-request-quote = "quotes_dba.request_quote:main"
-main = "quotes_dba.dummy:main"
+request-quote = "quotes_dab.request_quote:main"
+main = "quotes_dab.dummy:main"

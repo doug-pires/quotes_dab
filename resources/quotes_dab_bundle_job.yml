@@ -2,7 +2,7 @@
 resources:
   jobs:
     quotes_dab_bundle_job:
-      name: quotes_dab_bundle_job
+      name: quotes_dab_workflow
 
       # schedule:
       #   quartz_cron_expression: "44 37 8 * * ?"
