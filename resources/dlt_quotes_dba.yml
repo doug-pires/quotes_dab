@@ -5,15 +5,17 @@ resources:
       name: DLT_Quote_DBA
       catalog: catalog_quotes
       target: quotes_dba
+      development: false
+      continuous: false
+      photon: false
       # target: quotes_dba_bundle_${bundle.environment}
       libraries:
         - notebook:
             path: ../quotes_dba/pipeline/dlt_quote.py
       clusters:
         - num_workers: 1
-      custom_tags:
-        project: "quotes"
-        owner: "Douglas Pires"
-      development: false
-      continous: false
-      photon: false
+          custom_tags:
+            project: "quotes"
+            owner: "Douglas Pires"
+          spark_env_vars:
+            MY_VAR: "Hello from Enviroment Variable"

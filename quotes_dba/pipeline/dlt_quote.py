@@ -1,4 +1,10 @@
 # Databricks notebook source
+
+import sys
+
+path = "/Workspace/Users/d.martins@kigroup.de/.bundle/quotes_dba_bundle/dev/files"
+sys.path.append(path)
+
 import dlt
 import pyspark.sql.functions as F
 from pyspark.sql import Column, DataFrame
