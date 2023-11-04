@@ -33,11 +33,13 @@ resources:
 
         - task_key: refresh_pipeline
           depends_on:
-            - task_key: python_file_task
+            - task_key: extract_quotes
           pipeline_task:
-            pipeline_id: ${resources.pipelines.quotes_dba_bundle_pipeline.id}
+            pipeline_id: ${resources.pipelines.dlt_quotes.id}
 
         - task_key: run_dummy
+          depends_on:
+            - task_key: refresh_pipeline
           job_cluster_key: job_cluster
           spark_python_task:
             python_file: ../quotes_dba/dummy.py

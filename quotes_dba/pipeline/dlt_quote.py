@@ -3,8 +3,8 @@ import dlt
 import pyspark.sql.functions as F
 from pyspark.sql import Column, DataFrame
 
-from quotes.common import add_hash_col, add_metadata_cols, group_by_counting_rows
-from quotes.provide_config import path_landing_quotes_dbx, path_schema_autoloader
+from quotes_dba.common import add_hash_col, add_metadata_cols, group_by_counting_rows
+from quotes_dba.provide_config import path_landing_quotes_dbx, path_schema_autoloader
 
 # COMMAND ----------
 

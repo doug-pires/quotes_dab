@@ -1,0 +1,21 @@
+# The main pipeline for quotes_dba_bundle
+resources:
+  pipelines:
+    dlt_quotes:
+      name: DLT_Quote_DBA
+      catalog: catalog_quotes
+      target: quotes_dba
+      # target: quotes_dba_bundle_${bundle.environment}
+      libraries:
+        - notebook:
+            path: ../quotes_dba/pipeline/dlt_quote.py
+      clusters:
+        - label: "default"
+          custom_tags:
+            project: "quotes"
+            owner: "Douglas Pires"
+          development: false
+          continous: false
+          photon: false
+
+        - num_workers: 1

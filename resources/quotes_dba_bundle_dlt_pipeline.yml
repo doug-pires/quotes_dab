@@ -1,9 +1,0 @@
-# The main pipeline for quotes_dba_bundle
-resources:
-  pipelines:
-    quotes_dba_bundle_pipeline:
-      name: quotes_dba_bundle_pipeline
-      target: quotes_dba_bundle_${bundle.environment}
-      libraries:
-        - notebook:
-            path: ../quotes_dba/pipeline/dlt_quote.py
