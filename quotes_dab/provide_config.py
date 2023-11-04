@@ -32,6 +32,12 @@ Attributes:
 """
 use_case = "dab"
 
+
+"""
+Path to include thorugh module `sys`
+
+"""
+
 """
 Define Catalog Name and command to create it.
 

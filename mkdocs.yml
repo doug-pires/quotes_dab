@@ -1,0 +1,48 @@
+site_name: Quote Pipeline
+repo_url: https://github.com/doug-pires/quotes_dbx
+repo_name: doug-pires/quotes_dbx
+edit_uri: /tree/main/docs
+
+nav:
+  - The Big Picture: index.md
+  - Logging Configuration: logging.md
+  - Common Functions: common_functions.md
+  - Use Case Functions: use_case_functions.md
+  - Tests: tests.md
+  - References: references.md
+
+theme:
+  name: material
+  palette:
+    scheme: default
+    primary: black
+    accent: cyan
+  logo: &logo assets/quotes_logo.png
+  favicon: *logo
+  features:
+    - navigation.footer
+  icon:
+  previous: fontawesome/solid/angle-left
+  next:
+    fontawesome/solid/angle-right
+    # - header.autohide
+
+plugins:
+  - macros
+  - search
+  - mkdocstrings
+# Additional configuration
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/doug-pires
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/in/douglaspiresm/
+  # Jinja to include that {{ commands.run_dbx }}
+  commands:
+    project_example_dbx: "[dbx](https://dbx.readthedocs.io/en/latest/intro/)"
+    project_example_dab: "[Databricks Asset Bundles](https://docs.databricks.com/en/dev-tools/bundles/index.html)"
+
+markdown_extensions:
+  - attr_list
+  - pymdownx.emoji

@@ -31,7 +31,7 @@ resources:
             # for more information on how to add other libraries.
             - whl: ../dist/*.whl
 
-        - task_key: refresh_pipeline
+        - task_key: Run_DLT_Quotes
           depends_on:
             - task_key: extract_quotes
           pipeline_task:
@@ -39,7 +39,7 @@ resources:
 
         - task_key: run_dummy
           depends_on:
-            - task_key: refresh_pipeline
+            - task_key: Run_DLT_Quotes
           job_cluster_key: job_cluster
           spark_python_task:
             python_file: ../quotes_dab/dummy.py

@@ -40,5 +40,7 @@ def main():  # pragma: no cover
     print(dummy_func())
 
 
-if __name__ == "__main__":
-    main()
+# if __name__ == "__main__":
+#     main()
+
+main()
