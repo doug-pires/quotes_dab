@@ -10,12 +10,10 @@ resources:
         - notebook:
             path: ../quotes_dba/pipeline/dlt_quote.py
       clusters:
-        - label: "default"
-          custom_tags:
-            project: "quotes"
-            owner: "Douglas Pires"
-          development: false
-          continous: false
-          photon: false
-
         - num_workers: 1
+      custom_tags:
+        project: "quotes"
+        owner: "Douglas Pires"
+      development: false
+      continous: false
+      photon: false
