@@ -30,7 +30,7 @@ This variable specifies the use case for the script, which can be either "dbx" o
 Attributes:
     use_case (str): The use case, which can be either "dbx" (for one use case) or "dab" (for another use case).
 """
-use_case = "dbx"
+use_case = "dba"
 
 """
 Define Catalog Name and command to create it.

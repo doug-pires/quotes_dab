@@ -13,15 +13,23 @@ resources:
       #     - d.martins@kigroup.de
 
       tasks:
-        # - task_key: notebook_task
-        #   job_cluster_key: job_cluster
-        #   notebook_task:
-        #     notebook_path: ../quotes_dba/dummy.py
-
-        - task_key: python_file_task
+        - task_key: setup_catalogs
           job_cluster_key: job_cluster
           spark_python_task:
-            python_file: ../quotes_dba/dummy.py
+            python_file: ../quotes_dba/create_catalog_quotes.py
+
+        - task_key: extract_quotes
+          depends_on:
+            - task_key: setup_catalogs
+          job_cluster_key: job_cluster
+          python_wheel_task:
+            package_name: quotes_dba
+            entry_point: "request-quote"
+          libraries:
+            # By default we just include the .whl file generated for the quotes_dba_bundle package.
+            # See https://docs.databricks.com/dev-tools/bundles/library-dependencies.html
+            # for more information on how to add other libraries.
+            - whl: ../dist/*.whl
 
         - task_key: refresh_pipeline
           depends_on:
@@ -29,18 +37,10 @@ resources:
           pipeline_task:
             pipeline_id: ${resources.pipelines.quotes_dba_bundle_pipeline.id}
 
-        - task_key: main_task
-          depends_on:
-            - task_key: refresh_pipeline
+        - task_key: run_dummy
           job_cluster_key: job_cluster
-          python_wheel_task:
-            package_name: quotes_dba
-            entry_point: main
-          libraries:
-            # By default we just include the .whl file generated for the quotes_dba_bundle package.
-            # See https://docs.databricks.com/dev-tools/bundles/library-dependencies.html
-            # for more information on how to add other libraries.
-            - whl: ../dist/*.whl
+          spark_python_task:
+            python_file: ../quotes_dba/dummy.py
 
       job_clusters:
         - job_cluster_key: job_cluster

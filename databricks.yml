@@ -6,6 +6,13 @@ bundle:
 include:
   - resources/*.yml
 
+# These are any additional files or paths to include or exclude.
+sync:
+  exclude:
+    - "**/quotes_dba_bundle"
+    - "poetry.lock"
+    - "pyproject.toml"
+
 targets:
   # The 'dev' target, used for development purposes.
   # Whenever a developer deploys using 'dev', they get their own copy.
@@ -40,4 +47,3 @@ targets:
       # a service principal could be used here using service_principal_name
       # (see Databricks documentation).
       user_name: d.martins@kigroup.de
-    
