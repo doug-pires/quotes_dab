@@ -93,9 +93,8 @@ jobs:
           name: quotes_dab
           path: ./dist/
 
-      - name: Check folder
-        run: |
-          echo $(ls)
+      - name: Display structure of downloaded files
+        run: ls -R
 
         # Download the Databricks CLI.
         # See https://github.com/databricks/setup-cli

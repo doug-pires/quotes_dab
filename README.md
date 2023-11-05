@@ -59,9 +59,11 @@ However good principles applied and well solidified, avoid big headaches in the 
 ## Jobs in CI/CD
 
 ![ci_cd](./docs/assets/ci_cd.png)
+
 ---
 ## Coverage
 ![coverage](./docs/assets/coverage.png)
+
 ---
 ## Deploy
 ![deploy](./docs/assets/deploy.png)
@@ -88,7 +90,6 @@ However good principles applied and well solidified, avoid big headaches in the 
 ## Delta Table Properties defined in the pipeline
 ![delta_table_properties](./docs/assets/delta_properties.png)
 
-
 ---
 
 # Appendix
@@ -100,7 +101,7 @@ This is a showcase how we can use the same source code and deploy into Databrick
 - I am running all the pipeline as a user, the ideal would be [use Service Principal](https://medium.com/@abraham.pabbathi/automating-jobs-in-azure-databricks-with-service-principals-2e847d107961)
 - I did not schedule the workflows, I was running manually.
 - The documentation was published in Github Pages, however you can use other hosts, such as [Read the Docs](https://docs.readthedocs.io/en/stable/tutorial/index.html)
-- See the session *references* in [documentation](https://doug-pires.github.io/quotes_dbx/) to find useful articles.
+- See the session *references* in [documentation](https://doug-pires.github.io/quotes_dab/) to find useful articles.
 
 ---
 
