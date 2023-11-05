@@ -8,5 +8,5 @@
 
 ---
 # Common Functions -> Source Code :snake:
-::: quotes.common
+::: quotes_dab.common
     handler: python

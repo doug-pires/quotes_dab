@@ -51,8 +51,6 @@ With that said let's dive in...🏊‍♂️
 To sum up, there is no jack of all trades, always you will need specific tools to accomplish a goal.
 However good principles applied and well solidified, avoid big headaches in the future, be for a change request, add new use cases, transfer of ownership or onboarding a new joiner.
 
-> Check the [Documentation](https://doug-pires.github.io/quotes_dbx/) in GitHub Pages
-
 
 ---
 
@@ -91,10 +89,19 @@ However good principles applied and well solidified, avoid big headaches in the 
 ![delta_table_properties](./docs/assets/delta_properties.png)
 
 
-# Everything showed in the images, you can find on the repo and more nitty-gritty details in [documentation]()
-# Enjoy  💕 💞
+---
 
+# Appendix
 
+This is a showcase how we can use the same source code and deploy into Databricks using different approaches ( dbx or dab ) , witnessing the benefits of build modular,reusable code, relying on principles and best practices.
 
+**Bear in mind**:
+- Databricks recommends uses dab ( Databricks Asset Bundles ), you can learn how to migrate your dbx projects to dabs readind the [migration guidance](https://docs.databricks.com/en/archive/dev-tools/dbx/dbx-migrate.html)
+- I am running all the pipeline as a user, the ideal would be [use Service Principal](https://medium.com/@abraham.pabbathi/automating-jobs-in-azure-databricks-with-service-principals-2e847d107961)
+- I did not schedule the workflows, I was running manually.
+- The documentation was published in Github Pages, however you can use other hosts, such as [Read the Docs](https://docs.readthedocs.io/en/stable/tutorial/index.html)
+- See the session *references* in [documentation](https://doug-pires.github.io/quotes_dbx/) to find useful articles.
 
-![Alt text](image.png)
+---
+
+> Enjoy  💕 💞

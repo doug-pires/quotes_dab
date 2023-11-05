@@ -9,7 +9,9 @@
 
 > **Gaurav Thalpat**i: [Design Docs for Data Platforms](https://medium.com/@gauravthalpati/design-document-for-data-platforms-932df482692d)
 
-> **The Pragmatic Enginee**r: [RFC's & Design Docs](https://blog.pragmaticengineer.com/rfcs-and-design-docs/)
+> **The Pragmatic Engineer**: [RFC's & Design Docs](https://blog.pragmaticengineer.com/rfcs-and-design-docs/)
+
+> **Abraham Pabbathi**: [Set-up *Service Principal* to run Databricks Jobs](https://medium.com/@abraham.pabbathi/automating-jobs-in-azure-databricks-with-service-principals-2e847d107961)
 
 > **Brian Okken** : [Python Testing with pytest, 2nd Edition](https://pythontest.com/pytest-book/)
 

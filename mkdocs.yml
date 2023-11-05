@@ -1,6 +1,6 @@
 site_name: Quote Pipeline
-repo_url: https://github.com/doug-pires/quotes_dbx
-repo_name: doug-pires/quotes_dbx
+repo_url: https://github.com/doug-pires/quotes_dba
+repo_name: doug-pires/quotes_dba
 edit_uri: /tree/main/docs
 
 nav:

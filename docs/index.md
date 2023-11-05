@@ -75,8 +75,8 @@ Out-of-Scope ❌
 ### Manage Metadata and Build Process:
 - [Poetry](https://python-poetry.org/)
 
-## Deploy Databricks Assets
-- [Databricks Asset Bundles]([What are Databricks Asset Bundles? | Databricks on AWS](https://docs.databricks.com/en/dev-tools/bundles/index.html)) :octocat:  [check the repo here](https://github.com/doug-pires/quotes_dab)
+### Deploy Databricks Assets
+- [Databricks Asset Bundles]([What are Databricks Asset Bundles? | Databricks on AWS](https://docs.databricks.com/en/dev-tools/bundles/index.html))
 
 ### Python Libraries:
  - pyspark

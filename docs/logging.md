@@ -1,2 +1,2 @@
-::: quotes.config_logging
+::: quotes_dab.config_logging
     handler: python
