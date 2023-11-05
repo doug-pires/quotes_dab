@@ -101,11 +101,10 @@ jobs:
       # - name: Poetry Build
       #   run: |
       #     poetry build --format=wheel
-      - uses: actions/download-artifact@v3
-        with:
-          name: quotes_dab
-          path: ./dist/
-
+      # - uses: actions/download-artifact@v3
+      #   with:
+      #     name: quotes_dab
+      #     path: ./dist/
       - name: Check folder
         run: |
           echo $(ls)
