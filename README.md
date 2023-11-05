@@ -2,7 +2,7 @@
 
 ## DAB Porfolio
 - Repo : `.`
-- [Documentation](https://doug-pires.github.io/quotes_dba) in GitHub Pages
+- [Documentation](https://doug-pires.github.io/quotes_dab/) in GitHub Pages
 
 ## dbx portfolio
 - Repo : [ check the repo here](https://github.com/doug-pires/quotes_dbx)
