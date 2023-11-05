@@ -55,9 +55,13 @@ jobs:
         run: |
           poetry run pytest --cov=quotes_dab --cov-report=term-missing --cov-fail-under=$THRESHOLD_TESTS tests/
 
-      - name: Upload Artifact Wheel
+      - name: Build Artifact Wheel
         run: |
           poetry build --format=wheel
+
+      - name: Check folder
+        run: |
+          echo $(ls)
 
       - uses: actions/upload-artifact@v3
         with:
@@ -102,6 +106,9 @@ jobs:
           name: quotes_dab
           path: ./dist/
 
+      - name: Check folder
+        run: |
+          echo $(ls)
         # Download the Databricks CLI.
         # See https://github.com/databricks/setup-cli
       - name: Download Databricks CLI
