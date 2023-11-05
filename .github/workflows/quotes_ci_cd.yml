@@ -52,7 +52,7 @@ jobs:
 
       - name: Run Tests - Pytest and Coverage
         run: |
-          poetry run pytest --cov=quotes --cov-report=term-missing --cov-fail-under=$THRESHOLD_TESTS tests/
+          poetry run pytest --cov=quotes_dab --cov-report=term-missing --cov-fail-under=$THRESHOLD_TESTS tests/
 
   deploy:
     name: "Deploy bundle"
