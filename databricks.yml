@@ -10,6 +10,10 @@ include:
 sync:
   exclude:
     - "**/quotes_dba_bundle"
+    - "**/tests"
+    - "mkdocs.yml"
+    - "**/docs"
+    - resources/*.yml
     - "poetry.lock"
     - "pyproject.toml"
 

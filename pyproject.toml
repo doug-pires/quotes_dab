@@ -50,7 +50,7 @@ exclude_lines = [
 
 [tool.coverage.run]
 omit = [
-    "quotes/create_catalog_quotes.py"
+    "quotes_dab/create_catalog_quotes.py"
 ]
 
 [tool.black]
