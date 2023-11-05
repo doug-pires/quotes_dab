@@ -152,7 +152,7 @@ def mock_authentication_databricks(mocker):
             assert result == "Authentication Successful"
         ```
     """
-    path_to_mock = "quotes.request_quote.authenticate_databricks"
+    path_to_mock = "quotes_dab.request_quote.authenticate_databricks"
 
     w_mock = mocker.patch(path_to_mock)
     return w_mock
@@ -161,7 +161,7 @@ def mock_authentication_databricks(mocker):
 @pytest.fixture(scope="function")
 def api_key_mock_local(mocker):
     # api_key = os.getenv("API_KEY_NINJAS")
-    path_to_mock = "quotes.request_quote.get_api_key"
+    path_to_mock = "quotes_dab.request_quote.get_api_key"
     mock_api_key = mocker.patch(path_to_mock, api_key="44sa5adaKey")
     return mock_api_key
 
