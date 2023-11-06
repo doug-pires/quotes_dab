@@ -9,11 +9,9 @@ include:
 # These are any additional files or paths to include or exclude.
 sync:
   exclude:
-    - "**/quotes_dba_bundle"
-    - "**/tests"
+    - tests/*
     - "mkdocs.yml"
-    - "**/docs"
-    - resources/*.yml
+    - "docs/*"
     - "poetry.lock"
     - "pyproject.toml"
 
