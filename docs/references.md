@@ -16,3 +16,5 @@
 > **Brian Okken** : [Python Testing with pytest, 2nd Edition](https://pythontest.com/pytest-book/)
 
 > **Eduardo Mendes** : [(6) Documentado projetos com MkDocs - Live de Python #189 - YouTube](https://www.youtube.com/watch?v=GW6nAJ1NHUQ)
+
+> **Cassio Bolba** : [Write better Python: start doing this now!](https://medium.com/@cassio-bolba/write-better-python-start-doing-this-now-8b88079593ae)
