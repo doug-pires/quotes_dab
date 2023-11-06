@@ -12,6 +12,7 @@ resources:
       libraries:
         - notebook:
             path: ../quotes_dab/pipeline/dlt_quote.py
+            parameters: ["/Workspace${workspace.file_path}/"]
       clusters:
         - num_workers: 1
           custom_tags:
@@ -21,4 +22,4 @@ resources:
             MY_VAR: "Hello from Enviroment Variable"
 
       configuration:
-        bundle.sourcePath: /Workspace/${workspace.file_path}/quotes_dab
+        bundle.sourcePath: /Workspace${workspace.file_path}/
