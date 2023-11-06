@@ -71,8 +71,6 @@ Out-of-Scope ❌
 
 ![Architecture](./assets/dbx_or_dab.png)
 
-![Alt text](image.png)
-
 
 ### Manage Metadata and Build Process:
 - [Poetry](https://python-poetry.org/)
