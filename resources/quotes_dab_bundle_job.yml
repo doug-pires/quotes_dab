@@ -9,9 +9,9 @@ resources:
           job_cluster_key: job_cluster
           spark_python_task:
             python_file: ../quotes_dab/create_catalog_quotes.py
+            parameters: ["/Workspace/${workspace.file_path}/"]
             configuration:
               bundle.sourcePath: /Workspace/${workspace.file_path}/quotes_dab
-              parameters: ["/Workspace/${workspace.file_path}/quotes_dab"]
 
         - task_key: extract_quotes
           depends_on:
