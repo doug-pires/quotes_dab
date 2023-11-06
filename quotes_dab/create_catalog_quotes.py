@@ -4,8 +4,10 @@ import sys
 from os import path
 from pathlib import Path
 
+print(path)
 path_2 = Path().cwd()
 sys.path.append(path_2)
+print(path_2)
 
 from quotes_dab.provide_config import sql_cmd_create_catalog, sql_cmd_create_schema
 
