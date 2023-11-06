@@ -1,8 +1,11 @@
 # Databricks notebook source
+
+# COMMAND ----------
+path = spark.conf.get("bundle.sourcePath")
 import sys
 
-bundle_src_path = sys.argv[1]
-sys.path.append(bundle_src_path)
+sys.path.append(path)
+
 
 import dlt
 import pyspark.sql.functions as F
