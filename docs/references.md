@@ -1,4 +1,4 @@
-# Gems References 💎
+# References 💎
 
 
 > **Alex Ott** : [Applying software development & DevOps best practices to Delta Live Table pipelines | Databricks Blog](https://www.databricks.com/blog/applying-software-development-devops-best-practices-delta-live-table-pipelines)
