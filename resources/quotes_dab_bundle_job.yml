@@ -29,6 +29,7 @@ resources:
             - task_key: extract_quotes
           pipeline_task:
             pipeline_id: ${resources.pipelines.dlt_quotes.id}
+            parameters: ["/Workspace${workspace.file_path}"]
 
         - task_key: run_dummy
           depends_on:

@@ -12,7 +12,6 @@ resources:
       libraries:
         - notebook:
             path: ../quotes_dab/pipeline/dlt_quote.py
-            parameters: ["/Workspace${workspace.file_path}/"]
       clusters:
         - num_workers: 1
           custom_tags:

@@ -1,9 +1,7 @@
 # Databricks notebook source
 
-# import sys
-
-# path = "/Workspace/Users/d.martins@kigroup.de/.bundle/quotes_dab_bundle/dev/files"
-# sys.path.append(path)
+bundle_src_path = sys.argv[1]
+sys.path.append(bundle_src_path)
 
 import dlt
 import pyspark.sql.functions as F
