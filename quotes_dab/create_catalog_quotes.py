@@ -4,16 +4,15 @@ import sys
 # from os import path
 from pathlib import Path
 
-path_absolute = Path().cwd().absolute()
-path_abs_parent = Path().cwd().absolute().parent
-path_abs_parents = Path().cwd().absolute().parents
-
-print("Path Obsolute:", path_absolute)
-print("Path Obsolute Parent:", path_abs_parent)
-print("Path Obsolute Parents:", path_abs_parents)
+path_file = Path(__file__).parent.as_posix()
+path_file_parent = Path(__file__).parent.parent.as_posix()
 
 
-sys.path.append(path_absolute.as_posix())
+print("Path Obsolute Parent:", path_file)
+print("Path Obsolute Parents:", path_file_parent)
+
+
+sys.path.append(path_file_parent)
 
 from quotes_dab.provide_config import sql_cmd_create_catalog, sql_cmd_create_schema
 
