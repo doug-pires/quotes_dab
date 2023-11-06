@@ -127,13 +127,3 @@ def group_by_counting_rows(df: DataFrame, col: str):
     """
     df_grouped = df.groupBy(col).count()
     return df_grouped
-
-
-if __name__ == "__main__":  # pragma: no cover
-    cols_to_be_casted = {"age": "int", "is_married": "boolean"}
-    keys = list(cols_to_be_casted.keys())
-    print(keys)
-    for key in keys:
-        type = cols_to_be_casted.get(key)
-        col_name = f"{key}_casted"
-        print(key, type, col_name)
