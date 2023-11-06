@@ -103,6 +103,8 @@ This is a showcase how we can use the same source code and deploy into Databrick
 - The documentation was published in Github Pages, however you can use other hosts, such as [Read the Docs](https://docs.readthedocs.io/en/stable/tutorial/index.html)
 - See the session *references* in [documentation](https://doug-pires.github.io/quotes_dab/) to find useful articles.
 
+
+> Special thanks to KI Performance
 ---
 
 > Enjoy  💕 💞
