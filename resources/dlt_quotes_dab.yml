@@ -19,3 +19,6 @@ resources:
             owner: "Douglas Pires"
           spark_env_vars:
             MY_VAR: "Hello from Enviroment Variable"
+
+      configuration:
+        bundle.sourcePath: /Workspace/${workspace.file_path}/quotes_dab

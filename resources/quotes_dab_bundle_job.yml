@@ -4,19 +4,13 @@ resources:
     quotes_dab_bundle_job:
       name: quotes_dab_workflow
 
-      # schedule:
-      #   quartz_cron_expression: "44 37 8 * * ?"
-      #   timezone_id: Europe/Amsterdam
-
-      # email_notifications:
-      #   on_failure:
-      #     - d.martins@kigroup.de
-
       tasks:
         - task_key: setup_catalogs
           job_cluster_key: job_cluster
           spark_python_task:
             python_file: ../quotes_dab/create_catalog_quotes.py
+            configuration:
+              bundle.sourcePath: /Workspace/${workspace.file_path}/quotes_dab
 
         - task_key: extract_quotes
           depends_on:

@@ -4,8 +4,8 @@ import sys
 # from os import path
 from pathlib import Path
 
-path_file = Path(__file__).parent.as_posix()
-path_file_parent = Path(__file__).parent.parent.as_posix()
+path_file = Path().cwd().parent.as_posix()
+path_file_parent = Path("/").as_posix()
 
 
 print("Path Obsolute Parent:", path_file)
