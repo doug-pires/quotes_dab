@@ -94,7 +94,7 @@ However good principles applied and well solidified, avoid big headaches in the 
 
 # Appendix
 
-This is a showcase how we can use the same source code and deploy into Databricks using different approaches ( dbx or dab ) , witnessing the benefits of build modular,reusable code, relying on principles and best practices.
+This is a showcase how we can use the same source code and deploy into Databricks using different approaches (dbx or dab), witnessing the benefits of build modular, reusable code, relying on principles and best practices.
 
 **Bear in mind**:
 - Databricks recommends uses dab ( Databricks Asset Bundles ), you can learn how to migrate your dbx projects to dabs readind the [migration guidance](https://docs.databricks.com/en/archive/dev-tools/dbx/dbx-migrate.html)
